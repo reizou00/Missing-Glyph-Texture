@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.missing_glyph_texture.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"FontSetAccessor",
+		"FontSetMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

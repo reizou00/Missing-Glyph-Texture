@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "missing-glyph-texture",
+	"version": "${version}",
+	"name": "Missing Glyph Texture",
+	"description": "割り当てられていないフォントを欠落したテクスチャにしてくれます。",
+	"authors": [
+		"reizou_00"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MPL-2.0",
+	"icon": "assets/missing-glyph-texture/icon.png",
+	"environment": "client",
+	"entrypoints": {
+	},
+	"mixins": [
+		{
+			"config": "missing-glyph-texture.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": ">=1.21.5 <1.21.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
