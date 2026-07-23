@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "missing-glyph-texture",
+	"id": "missing_glyph_texture",
 	"version": "${version}",
 	"name": "Missing Glyph Texture",
-	"description": "割り当てられていないフォントを欠落したテクスチャにしてくれます。",
+	"description": "Replaces missing glyphs with a missing texture.",
 	"authors": [
 		"reizou_00"
 	],
