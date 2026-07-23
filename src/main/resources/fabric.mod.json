@@ -17,7 +17,7 @@
 	},
 	"mixins": [
 		{
-			"config": "missing-glyph-texture.client.mixins.json",
+			"config": "missing-glyph-texture.mixins.json",
 			"environment": "client"
 		}
 	],

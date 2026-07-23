@@ -20,12 +20,9 @@ repositories {
 }
 
 loom {
-	splitEnvironmentSourceSets()
-
 	mods {
 		"missing-glyph-texture" {
 			sourceSet sourceSets.main
-			sourceSet sourceSets.client
 		}
 	}
 
