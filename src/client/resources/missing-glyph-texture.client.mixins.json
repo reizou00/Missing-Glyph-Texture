@@ -4,7 +4,9 @@
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 		"FontSetAccessor",
-		"FontSetMixin"
+		"FontSetMixin",
+		"GlyphInfoFilterAccessor",
+		"GlyphInfoFilterMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
