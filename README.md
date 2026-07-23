@@ -1,9 +1,10 @@
 # Missing Glyph Texture
+割り当てられていないフォントを欠落したテクスチャにしてくれます。
 
-## Setup
+<img width="468" height="91" alt="image" src="https://github.com/user-attachments/assets/e3cebadf-220c-4db7-8fff-cd16f12d51a7" />
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+## 動作確認バージョン
+1.21.5
 
 ## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+MPL 2.0
