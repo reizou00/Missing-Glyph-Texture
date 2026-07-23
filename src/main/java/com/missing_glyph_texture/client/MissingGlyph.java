@@ -10,8 +10,6 @@ package com.missing_glyph_texture.client;
 import com.mojang.blaze3d.font.GlyphInfo;
 import com.mojang.blaze3d.font.SheetGlyphInfo;
 import com.mojang.blaze3d.platform.NativeImage;
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.textures.GpuTexture;
 import net.minecraft.client.gui.font.glyphs.BakedGlyph;
 import org.jetbrains.annotations.NotNull;
 
@@ -44,7 +42,7 @@ public enum MissingGlyph implements GlyphInfo {
                 boolean checker = ((x / 4) + (y / 4)) % 2 == 0;
 
                 // さっき言ってた空の画像に色をつける感じだと思われます()
-                image.setPixel(
+                image.setPixelRGBA(
                         x,
                         y,
                         checker
@@ -95,21 +93,8 @@ public enum MissingGlyph implements GlyphInfo {
 
                     // さっき作ったやつをアップロード！！！
                     @Override
-                    public void upload(int x, int y, GpuTexture texture) {
-
-                        RenderSystem.getDevice()
-                                .createCommandEncoder()
-                                .writeToTexture(
-                                        texture,
-                                        IMAGE,
-                                        0,
-                                        x,
-                                        y,
-                                        IMAGE.getWidth(),
-                                        IMAGE.getHeight(),
-                                        0,
-                                        0
-                                );
+                    public void upload(int x, int y) {
+                        IMAGE.upload(0, x, y, false);
                     }
                 }
         );
