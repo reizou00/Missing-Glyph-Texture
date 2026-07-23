@@ -65,9 +65,11 @@ public enum MissingGlyph implements GlyphInfo {
         return (float)(IMAGE.getWidth() + 1);
     }
 
+    // GlyphInfoを描画用のBakedGlyphに変えちゃうわよ！
     @Override
     public @NotNull BakedGlyph bake(Function<SheetGlyphInfo, BakedGlyph> stitch) {
 
+        // FontTextureに登録して、描画用のBakedGlyphを作っちまいます。
         return stitch.apply(
                 new SheetGlyphInfo() {
 
@@ -91,6 +93,7 @@ public enum MissingGlyph implements GlyphInfo {
                         return true;
                     }
 
+                    // さっき作ったやつをアップロード！！！
                     @Override
                     public void upload(int x, int y, GpuTexture texture) {
 
